@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Consultar Endereço ViaCEP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input labelPlacement="floating" [(ngModel)]="cep" maxlength="8">
+      <div slot="label">CEP:</div>
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input labelPlacement="floating">
+      <div slot="label">Logradouro:</div>
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input labelPlacement="floating">
+      <div slot="label">Bairro</div>
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input labelPlacement="floating">
+      <div slot="label">Cidade</div>
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input labelPlacement="floating">
+      <div slot="label">Estado</div>
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="consultarEndereco()">Consultar</ion-button>
+</ion-content>
