@@ -13,29 +13,31 @@
     </ion-input>
   </ion-item>
 
+  <ion-button expand="block" (click)="consultarEndereco()">Consultar</ion-button>
+
   <ion-item>
-    <ion-input labelPlacement="floating">
+    <ion-input labelPlacement="floating" [(ngModel)]="endereco.logradouro">
       <div slot="label">Logradouro:</div>
     </ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input labelPlacement="floating">
-      <div slot="label">Bairro</div>
+    <ion-input labelPlacement="floating" [(ngModel)]="endereco.bairro" >
+      <div slot="label">Bairro:</div>
     </ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input labelPlacement="floating">
-      <div slot="label">Cidade</div>
+    <ion-input labelPlacement="floating" [(ngModel)]="endereco.localidade" >
+      <div slot="label">Cidade:</div>
     </ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input labelPlacement="floating">
-      <div slot="label">Estado</div>
+    <ion-input labelPlacement="floating" [(ngModel)]="endereco.uf" >
+      <div slot="label">Estado:</div>
     </ion-input>
   </ion-item>
 
-  <ion-button expand="block" (click)="consultarEndereco()">Consultar</ion-button>
+  <ion-button expand="block" (click)="procurarPorEndereco()">Procurar pelo Endereço</ion-button>
 </ion-content>
